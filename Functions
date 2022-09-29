@@ -1,0 +1,27 @@
+def whiteLED():
+    wled.value = True
+    wled.value == 1
+    yled.value = 0
+
+def blueLED():
+    bled.value = True
+    bled.value == 1
+    yled.value = 0
+    
+    
+def yellowLED():
+    yled.value = True
+    bled.value = 0
+    yled.value == 1
+    
+def switchWait():
+    print('Switch Wait Start')
+    yled.value = False
+    bled.value = False
+    wled.value = False
+    yled.value == 0
+    bled.value == 0
+    wled.value == 0
+    time.sleep(.1)
+    print('Switch Wait Over')
+    time.sleep(.1)
